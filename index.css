@@ -1,0 +1,90 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+    font-family: 'Raleway';
+    color: white;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;}
+
+body{
+    background-color: #1A1A40;
+}
+div.gradient{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image:radial-gradient(circle at top right, #7A0BC0 -51%, #000055 51%, #0ff0 96%);
+    top: 0;
+    z-index: -1;
+}
+div.name{
+    padding: 1rem 1.6rem;
+        background-color: #2b2bbe80;
+        border-radius: 15px;
+        width: fit-content;
+        margin: 3rem;
+        font-size: 1.2rem;
+}
+div.intro{
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+div.intro-cont{
+    background-color: #2b2bbe80;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 2rem;
+    height: fit-content;
+    align-self: center;
+}
+div.intro-cont > h2{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+div.intro-cont > p{
+    font-size: 1.2rem;
+    line-height: 1.45em;
+}
+
+div.image{
+    background-color: white;
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url(me.jpg);
+    background-size: cover;
+    border: #312bbe solid 7px;
+}
+span#name{
+    color: #a395ff;
+}
