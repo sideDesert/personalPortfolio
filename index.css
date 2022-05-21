@@ -87,6 +87,23 @@ div.image{
 span#name{
     color: #a395ff;
 }
+
+div.exp h1{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+div.exp > div{
+    background: #5c55ff3b;
+    padding: 2rem;
+    display: flex;
+    width: fit-content;
+    border-radius: 20px;
+    gap: 1.2rem;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
 @media only screen and (max-width: 880px) {
     div.intro{
         flex-direction: column-reverse;
@@ -94,6 +111,33 @@ span#name{
     }
     div.image{
         align-self: center;
+    }
+    div.exp > div img{
+        height: 5rem;
+    }
+}
+@media only screen and (max-width: 740px){
+    div.exp > div img{
+        height: 3.5rem;
+    }
+}
+@media only screen and (max-width: 640px){
+    div.exp > div img{
+        height: 3.5rem;
+    }
+    div.exp > h1{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 560px){
+    div.exp div{
+        border-radius: 15px;
+    }
+    div.exp > div img{
+        height: 2.8rem;
+    }
+    div.exp > h1{
+        font-size: 1.8rem;
     }
 }
 @media only screen and (max-width: 525px){
@@ -105,5 +149,12 @@ span#name{
     }
     div.intro-cont{
         width: 67%;
+    }
+    div.exp>div{
+        flex-direction: column;
+    }
+    div.exp > div img{
+        height: auto;
+        width: 100px;
     }
 }
